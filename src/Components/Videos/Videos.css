@@ -1,0 +1,35 @@
+.fullBox{
+    display:table;
+    grid-gap:60px;
+    width: 90%;
+    margin:auto;
+}
+.row{
+    display: flex;
+    margin-top: -5px;
+}
+.leftSide{
+    display: table-cell;
+}
+.rightSide{
+    display: table-cell;
+    flex: 1; /* additionally, equal width */
+}
+.biggest{
+    width:  100%;
+    height: 552px;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+}
+.smallerLR{
+    width:  50%;
+    height: 300px;
+}
+.smallerLR{
+    width:  50%;
+    height: 300px;
+}
+.rightTB{
+    width: 100%;
+    height:434px;
+}

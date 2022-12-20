@@ -28,7 +28,8 @@
 }
 
 .grid > div {
-  flex-basis: calc(20% - 10px);
+  margin: auto;
+  flex-basis: calc(30% - 50px);
 }
 
 .boxy {
@@ -55,4 +56,7 @@
   background-color: red !important;
   font-size: 5vh;
   border-radius: 10px 10px 10px 10px;
+}
+.limitedButton{
+  margin: 0;
 }
