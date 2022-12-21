@@ -1,10 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Home.css"
 import tourPic from "./weeknd-header-v2.jpeg";
 import NavbarLink from "../NavbarLink/NavbarLink";
 import { Gallery } from "react-grid-gallery";
 import picOne from "./pic1.jpg";
 import picTwo from "./pic2.jpeg";
+import Carousel from 'react-bootstrap/Carousel';
 const images = [
     {
        src: picOne,
@@ -65,19 +67,59 @@ const images = [
     id:19
   }
   ];
-
+// const arr = [];
+// for (let i = 0; i < images.length; i++) {
+//   arr.push(i)
+// }
+// const random = Math.floor(Math.random() * arr.length); 
 class Home extends React.Component{
     // function galleryTimer(){
     //     for (const [key, value] of Object.entries(images)) {
     //       console.log(key, value);
     //     }
     //   }
+    componentDidMount() {
+      this.changeImage();
+    }
+    changeImage = () => {
+          const randomNumber = Math.floor(Math.random() * images.length);
+          this.setState({
+            currentImageIndex: randomNumber
+          });
+    } 
     render(){
         return(
         
             <div>
         <NavbarLink/>
+        <Carousel>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          style={{height:"150px"}}
+          src="https://consequence.net/wp-content/uploads/2022/07/the-weeknd-tour-kick-off-philadelphia-philly-after-hours-til-dawn.jpg?quality=80&w=1031&h=580&crop=1&resize=1031%2C580&strip"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          style={{height:"150px"}}
+          src="https://www.gannett-cdn.com/presto/2022/08/31/PPHX/39c6e94e-65ac-4abf-aa20-27e5d52cb481-The_Weeknd_20.JPG"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          style={{height:"150px"}}
+          src="https://ca-times.brightspotcdn.com/dims4/default/69a9670/2147483647/strip/true/crop/6720x4480+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F33%2F34%2F86703ace42f6b1f17ad8b68ca485%2Fphoto-2022-08-07-4-07-51-am.jpg"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
         <div class="container">
+          
           <div class="row">
             <div class="col-sm">
               <img src={"https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png"} alt="Spotify" height="148" width="148"/>
@@ -90,21 +132,21 @@ class Home extends React.Component{
             <div class="col text-warning"><h1>85,512,263</h1></div>
               <div class="col"><h3>Monthly Listeners</h3></div>
             </div>
-            <div class="col-sm">
-            <div><img src={"https://guestoria.com/wp-content/uploads/2018/06/instagram-logo-png-transparent-background-1024x1024.png"}alt="Instagram" height="55.91"/></div>
+            <div class="col-sm" style={{display:"inline-block"}}>
+              <div><img src={"https://guestoria.com/wp-content/uploads/2018/06/instagram-logo-png-transparent-background-1024x1024.png"}alt="Instagram" height="55.91"/></div>
               <div><img src={"https://www.edigitalagency.com.au/wp-content/uploads/Twitter-logo-png.png"} alt="Twitter" height="55.91"/></div>
             </div>
           </div>
 
           <div>
-            <img src={tourPic} alt="Tour" width="90%"/>
-            <h1 className="tourText">AFTER HOURS TIL DAWN TOUR</h1>
+            <img src={tourPic} alt="Tour" width="70%" className="largeImg"/>
+            <h1 className="tourText">AFTER HOURS <br/>TIL DAWN<br/> TOUR</h1>
           </div>
           <section class="featured-shop">
       <div class="shop-mb"> 
         <div class="view-header">
-          <a href="https://shop.theweeknd.com/?utm_campaign=products&amp;utm_medium=referral&amp;utm_source=theweeknd.com" target="_blank">
-            <h2>Visit the official<br/>online shop</h2>
+          <a href="/Merch" style={{textDecoration: "none"}}>
+            <h2 style={{color:"black",fontSize:"50px"}}>WEAR THE<br/>BEST.</h2>
           </a>
         </div>
         <Gallery images={images} />

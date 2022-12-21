@@ -1,0 +1,12 @@
+.largeImg{
+    float: left;
+    margin-right: 20px;
+    vertical-align :middle;
+}
+.tourText{
+    color:#E10430;
+    font-size: 60px;
+    font-weight: bold;
+    
+    /* float: left; */
+}
