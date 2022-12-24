@@ -1,3 +1,14 @@
+@media screen and (min-width: 1365px) and (max-width: 1440){
+  .grid{
+      margin-left:10vh;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 414){
+  .grid{
+      margin-left:7vh;
+  }
+}
+
 .box1,
 .box2,
 .box3,
@@ -29,7 +40,7 @@
 
 .grid > div {
   margin: auto;
-  flex-basis: calc(30% - 50px);
+  flex-basis: calc(30% - 20px);
 }
 
 .boxy {

@@ -5,26 +5,23 @@ import Videos from "../Videos/Videos";
 import Signup from "../Signup/Signup";
 import Login from "../Login/Login";
 import ProductPage from '../ProductPage/ProductPage';
-import {BrowserRouter,Route,Routes} from "react-router-dom";
+
+import {BrowserRouter,Route,Routes,Switch} from "react-router-dom";
 
 function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/Merch" element={<Merch/>}/>
-          <Route path="/Videos" element={<Videos/>}/>
-          <Route path="/Login" element={<Login/>}/>
-          <Route path="/Signup" element={<Signup/>}/>
-          <Route path="/ProductPage" element={<ProductPage/>}/>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/Videos" element={<Videos/>}/>
+          <Route exact path="/Login" element={<Login/>}/>
+          <Route exact path="/Signup" element={<Signup/>}/>
+          <Route exact path="/Merch" element={<Merch/>}/>
+          <Route exact path="/Merch/:productId" element={<ProductPage/>}/>
+          <Route path="*" element={<h1>Not found</h1>}/>
         </Routes>
       </BrowserRouter>
-    
-  //   <>
-  //   <Routes>
-  //     
-  //   </Routes>
-  //   </>
+
   );
 }
 
