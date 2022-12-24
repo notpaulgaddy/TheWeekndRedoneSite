@@ -1,0 +1,16 @@
+#dropdown-basic-button{
+    margin-top: 50px;
+    margin-left:88%;
+}
+#root{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#E10430;
+}
+/* .grid{
+    margin-left:7vh;
+} */
