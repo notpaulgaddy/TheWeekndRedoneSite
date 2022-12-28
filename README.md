@@ -11,4 +11,10 @@
   <li>What are their needs?</li>
   <li>What value do we bring them?</li>
 </ol>
+
+<h2>Now, let's answer these</h2>
+<h2>This website is for the Weeknd</h2>
+<h2>Large artists have much different needs than smaller ones. The main needs for these artists are to maximize tour profits, sponsorships and merch sales, two of which we can help.</h2>
+<h2>The value I bring is improving his website in a way that's more user friendly, maximizes engagement and encourages the fan to spend more money while supporting their favorite artist.</h2>
+
 <img src="https://github.com/notpaulgaddy/TheWeekndRedoneSite/blob/main/homePageWeeknd.png?raw=true"/>
