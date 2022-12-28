@@ -1,13 +1,28 @@
-import React from "react";
+import React,{useContext} from "react";
+import "./NavbarLink.css";
 import { Nav, Navbar} from "react-bootstrap";
 import { ReactComponent as Logo } from "./tw-sitelogo-copy.svg";
+import Button from 'react-bootstrap/Button';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { AuthContext } from "../Firebase/authCheck.js";
 
-class NavbarList extends React.Component {
-  render(){
+export default function NavbarLink(){
+  let buttonStack;
+  const currentUser = useContext(AuthContext);
+  if(currentUser){
+    buttonStack = <Button style={{marginLeft:"27%"}} variant="light">Logout</Button>
+  }
+  else{
+    buttonStack = 
+    <div> 
+      <Button style={{marginLeft:"27%"}} variant="light" href="/Login">Login</Button>
+      <Button style={{marginLeft:"10px"}} variant="primary" href="/Signup">Signup</Button>
+    </div>
+  }
+
     return(
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="#home">
+        <Navbar className="theNavbar" collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar.Brand href="/">
             <Logo
               alt=""
               width="185"
@@ -18,15 +33,17 @@ class NavbarList extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/Merch">Merch</Nav.Link>
-              <Nav.Link href="#pricing">Videos</Nav.Link>
+              <Nav.Link style={{color:"white"}} href="/Merch">Merch</Nav.Link>
+              <Nav.Link style={{color:"white"}} href="/Videos">Videos</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">XOFund</Nav.Link>
+              <Nav.Link style={{color:"white"}} href="/XOFund">XOFund</Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          {buttonStack}
+          {/* <Navbar.Brand>
+            {buttonStack}
+          </Navbar.Brand> */}
         </Navbar>
       );
   }
-}
-export default NavbarList;

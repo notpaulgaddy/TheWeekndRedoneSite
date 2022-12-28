@@ -1,12 +1,81 @@
-.largeImg{
-    float: left;
-    margin-right: 20px;
-    vertical-align :middle;
+#top img{
+    height: 30vh;
+    width: 100%;
+}
+.tourPanel{
+    background-color: #FF3F12;
+    height:34.2vh;
+}
+.tourTextStart{
+    margin-top: 1vh;
 }
 .tourText{
-    color:#E10430;
-    font-size: 60px;
-    font-weight: bold;
-    
-    /* float: left; */
+    color:black;
+    font-size: 4em;
+    font-weight:bold;
+    text-align: center;
 }
+.tXvButton{
+    background-color: transparent;
+    border: 3px solid white;
+}
+.dxvText{
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: white;
+}
+.tooLatePic{
+    width:118%;
+    margin-left: -185px;
+    margin-bottom:100px;
+}
+.black{
+    background-color: black;
+    color:white;
+    width:100%;
+}
+.cardText{
+    width:60%;
+    margin:auto;
+}
+.cardText h2{
+    display: inline;
+    margin-left: 30px;
+}
+.socials{
+    background-color: black;
+    height:8vh;
+}
+.socials h2{
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    margin-top:2%
+}
+.socialName{
+    color:white;
+    font-size: 40px;
+}
+/* @media (min-width: 900px){
+    div.shop-mb {
+        height: 55vw;
+    }
+}
+div.shop-mb {
+    height: 95vw;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    font-family: var(--font-heading-family);
+    margin-bottom: var(--space-32);
+}
+div.shop-mb div.view-header {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+div.shop-mb div.view-header {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+} */
