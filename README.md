@@ -23,3 +23,7 @@
 <h2>We then move onto the tour panel, keep in mind, tours are usually the biggest way for massive artists to earn money since they usually have an unfavorable revenue split in their record label contracts. After we catch the user's eye with the hero image/first panel, we automatically show them that he's on tour. We show the next 6 locations, but if they're not there, they click on "Tour Dates X Venues" in order to see the full list, hence more time spent browsing the site</h2>
 <h2>For the third panel, we have his socials. I wanted to use a popular music marketing campaign that uses a phone number along with an image of the artist in order to create wonder. Secondly, I didn't add links to his Snapchat, Facebook, Instagram and Twitter because his fans already have these. Thirdly, a major way to keep their fans interested in their music is to give them a non personal phone number that lets them speak to fans and update them on new music drops, tours etc.</h2>
 <h2>Lastly we have images of the merch with a simple call to action. They see some of the merch and are prompted visit the merch page.</h2>
+
+<br>
+<h1><strong>Merch</strong></h1>
+<img src="https://github.com/notpaulgaddy/TheWeekndRedoneSite/blob/main/merchWeeknd.png?raw=true"/>
