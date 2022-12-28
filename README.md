@@ -17,4 +17,6 @@
 <h2>Large artists have much different needs than smaller ones. The main needs for these artists are to maximize tour profits, sponsorships and merch sales, two of which we can help.</h2>
 <h2>The value I bring is improving his website in a way that's more user friendly, maximizes engagement and encourages the fan to spend more money while supporting their favorite artist.</h2>
 
+<h1><strong>Home</strong></h1>
 <img src="https://github.com/notpaulgaddy/TheWeekndRedoneSite/blob/main/homePageWeeknd.png?raw=true"/>
+<h2>We begin with a hero image(will be changed to the Weeknd soon) in order to grab the user's attention with bright colors. Even if users begin to think that they may not spend money on the site, beautiful web layouts may encourage otherwise, similar to how we always believed that if we wrote neatly in school, the people grading it would be slighlty less harsh. They see that the first part of the site is beautiful, took effort and are likely to stick around to see more if not buy something later</h2>
