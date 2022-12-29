@@ -1,0 +1,75 @@
+.containerBox{
+    width:80vw;
+    margin:auto;
+}
+.modelImg{
+    width:36%;
+    background-size: cover;
+}
+.emailListDiv{
+    width:100%;
+    background-color: #E9DAC4;
+    height:23vh
+}
+
+.emailBox{
+    margin-top: 20px;
+    width:70%;
+    height:80%;
+    border:0;
+}
+.box1{
+    background-color:#52B2CF ;
+    height:25vh;
+    width:20vh;
+    border:4px solid black;
+}
+.box2{
+    background-color:#109648 ;
+    height:25vh;
+    width:20vh;
+    border:4px solid black;
+}
+.box3{
+    background-color:#DC7F9B ;
+    height:25vh;
+    width:20vh;
+    border:4px solid black;
+}
+#dropdown-basic-button{
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #71FF92;
+    color:black;
+    font-weight: bold;
+    font-size:20px;
+    border: white;
+}
+.emailListText{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size:60px;
+}
+.filterToggle{
+    border-radius: 20px;
+    background-color: #F8D1D1;
+    color:black;
+    font-weight: bold;
+    font-size:20px;
+    border: white;
+}
+#root{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#E10430;
+}
+.filterToggle:hover{
+    background-color: #F8D1D1;
+}
+.topG{
+    width:400px;
+}

@@ -8,8 +8,15 @@
       margin-left:7vh;
   }
 }
-
-.box1,
+.ratingRow{
+  padding-top: -20px;
+  
+}
+.star{
+  width:40px;
+  margin-left: -20px;
+}
+/* .box1,
 .box2,
 .box3,
 .box4,
@@ -22,15 +29,18 @@
   background-color: #ffffff;
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
-  /* height: 200px; */
   max-height: 35vh;
 
+} */
+.itemBackgroundColor{
+  background-color: #F5F5F5;
 }
-
 .box {
   margin: 20px;
 }
-
+.square{
+  margin-left: 80px;
+}
 .grid {
   min-height: 20%;
   display: flex;
@@ -53,7 +63,21 @@
 .boxy:hover {
   animation: boxyRotation 4s infinite linear;
 }
-
+.aTc{
+  background-color: white;
+  font-size:"22px";
+  margin: "auto";
+  border-radius: 20px;
+  width:"191px";
+  height:"79px";
+}
+.button:hover{
+  background-color:#71FF92;
+}
+.priceNum{
+  font-size:20px;
+  font-weight:bold;
+}
 @keyframes boxyRotation {
   from {
     transform: rotate(0deg);
@@ -62,7 +86,13 @@
     transform: rotate(359deg);
   }
 }
-
+div .itemName{
+  color:black;
+  font-weight: bold;
+  text-align: left;
+  font-size:16px;
+  position: absolute;
+}
 .black-background {
   background-color: red !important;
   font-size: 5vh;
