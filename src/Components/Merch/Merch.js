@@ -32,10 +32,12 @@ class Merch extends React.Component {
                   </h2>
                 </Row>
                 <Row>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Col>   
                         <Form.Control type="email" placeholder="Enter email" className="emailBox"/>
-                        <Button><CheckLg/></Button>
-                    </Form.Group>
+                    </Col>
+                    <Col>
+                        <Button className="checkButton"><CheckLg/></Button>
+                    </Col>
                 </Row>
               </Col>
               <Col>
@@ -43,7 +45,7 @@ class Merch extends React.Component {
               </Col>
             </Row>
           </div>
-          <Row style={{margin:"auto"}}>
+          <Row className="threeDivs">
             <Col>
               <div className="box1">
                 <img src={Jack} className="jackImg" />
@@ -58,7 +60,13 @@ class Merch extends React.Component {
           </Row>
           <div className="topG">
             <Row>
-              <Col>
+              <Col className="filterCol buttonCol">
+                <Button className="filterToggle">
+                  All Filters
+                  <ArrowDown />
+                </Button>
+              </Col>
+              <Col className="sortCol buttonCol">
                 <DropdownButton id="dropdown-basic-button" title="Sort By">
                   <Dropdown.Item href="#/action-1">
                     Price: Lowest - Highest
@@ -73,16 +81,10 @@ class Merch extends React.Component {
                   </Dropdown.Item>
                 </DropdownButton>{" "}
               </Col>
-              <Col>
-                <Button className="filterToggle">
-                  All Filters
-                  <ArrowDown />
-                </Button>
-              </Col>
             </Row>
           </div>
 
-          <MerchComp />
+          {/* <MerchComp /> */}
         </div>
       </div>
     );
